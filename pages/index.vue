@@ -1,21 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Glacier Aussie"
+})
+</script>
 <template>
-  <p-accordion>
-    <p-accordion-item title="Item 1">
-      <div class="p-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </div>
-    </p-accordion-item>
-    <p-accordion-item title="Item 2">
-      <div class="p-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </div>
-    </p-accordion-item>
-    <p-accordion-item title="Item 3">
-      <div class="p-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      </div>
-    </p-accordion-item>
-  </p-accordion>
+  <h1>Hello World</h1>
 </template>
 <style lang="scss" scoped></style>

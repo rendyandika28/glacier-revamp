@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Glacier Aussie"
+})
+</script>
 <template>
   <main>
     <slot />
