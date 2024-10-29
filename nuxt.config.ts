@@ -1,9 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  alias: {
+    "scroll-into-view": "scroll-into-view",
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+    },
+  },
   compatibilityDate: "2024-04-03",
-  devtools: { enabled: true },
-  modules: ["@privyid/persona"],
   css: ["~/assets/css/tailwind.css"],
+  devtools: { enabled: true },
+  imports: {
+    dirs: ["stores", "composables/api"],
+  },
+  modules: ["@privyid/persona"],
+  nitro: {
+    compressPublicAssets: true,
+  },
   postcss: {
     plugins: {
       "postcss-hexrgba": {},
@@ -12,8 +28,5 @@ export default defineNuxtConfig({
       "postcss-lighten-darken": {},
       autoprefixer: {},
     },
-  },
-  alias: {
-    "scroll-into-view": "scroll-into-view",
   },
 });
