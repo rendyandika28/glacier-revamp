@@ -10,6 +10,9 @@ useHead({
   <!-- <screen-onboarding /> -->
   <!-- <screen-identity /> -->
   <!-- <screen-selfie /> -->
-  <screen-additional-document />
+  <!-- <screen-additional-document /> -->
+  <!-- <screen-document-welcome /> -->
+  <!-- <screen-document-list /> -->
+  <screen-document-viewer />
 </template>
 <style lang="scss" scoped></style>

@@ -13,6 +13,10 @@ const props = defineProps({
   variant: {
     type: String as PropType<StyleVariant>,
     default: 'link'
+  },
+  size: {
+    type: String as PropType<"xs" | "sm" | "md" | "lg">,
+    default: 'md'
   }
 })
 
@@ -24,7 +28,7 @@ const classBtn = computed<string>(() => {
 })
 </script>
 <template>
-  <p-button :variant="variant" :type="type" :class="`app-button ${classBtn}`">
+  <p-button :variant="variant" :type="type" :class="`app-button ${classBtn}`" :size="size">
     <p-text variant="btn">
       <slot />
     </p-text>
