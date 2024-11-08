@@ -4,7 +4,7 @@ useHead({
 })
 </script>
 <template>
-  <main>
+  <main class="grid place-items-center h-dvh">
     <slot />
   </main>
 </template>

@@ -13,4 +13,5 @@ export default {
   },
   plugins: [],
   presets: [require("@privyid/tailwind-preset")],
+  important: true,
 };

@@ -4,6 +4,12 @@ useHead({
 })
 </script>
 <template>
-  <h1>Hello World</h1>
+  <!-- <screen-otp /> -->
+  <!-- <screen-consent /> -->
+  <!-- <screen-personal-contact /> -->
+  <!-- <screen-onboarding /> -->
+  <!-- <screen-identity /> -->
+  <!-- <screen-selfie /> -->
+  <screen-additional-document />
 </template>
 <style lang="scss" scoped></style>

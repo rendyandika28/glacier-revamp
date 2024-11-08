@@ -11,13 +11,14 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2024-04-03",
-  css: ["~/assets/css/tailwind.css"],
+  css: ["~/assets/css/tailwind.css", "~/assets/styles/global.scss"],
   devtools: { enabled: true },
   googleFonts: {
     preload: true,
     display: "swap",
     families: {
       "DM Sans": "400..700",
+      Inter: "400..700",
       Allura: ["400"],
     },
   },
@@ -32,13 +33,16 @@ export default defineNuxtConfig({
     defaultLocale: "en",
   },
   modules: [
-    "@privyid/persona",
-    "@pinia/nuxt",
-    "@vueuse/nuxt",
-    "@nuxtjs/i18n",
     "@nuxtjs/device",
+    "@nuxtjs/i18n",
+    "@nuxt/image",
     "@nuxtjs/google-fonts",
+    "@pinia/nuxt",
+    "@privyid/persona",
+    "@privyid/persona-icon",
+    "@privyid/persona-ilustration",
     "@vee-validate/nuxt",
+    "@vueuse/nuxt",
     "nuxt-svgo",
   ],
   nitro: {
@@ -55,6 +59,9 @@ export default defineNuxtConfig({
   },
   svgo: {
     componentPrefix: "i",
+  },
+  device: {
+    refreshOnResize: true,
   },
   veeValidate: {
     // disable or enable auto imports

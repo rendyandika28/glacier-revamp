@@ -1,0 +1,13 @@
+// CUSTOM TRANSITIONS
+.slide-fade-up-enter-active {
+  transition: all 0.1s ease-out;
+}
+
+.slide-fade-up-leave-active {
+  transition: all 0.1s ease-in-out;
+}
+
+.slide-fade-up-enter-from,
+.slide-fade-up-leave-to {
+  @apply translate-y-6 sm:translate-y-24 opacity-0;
+}
